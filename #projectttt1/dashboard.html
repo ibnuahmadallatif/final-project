@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAGANG DITI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <button class="menu-toggle">
+        <a href="#"><i class="bi bi-arrow-left"></i></a>
+      </button>
+      <h1>MAGANG DITI</h1>
+      <a href="login.html"
+        ><button class="logout">
+          LOGOUT <i class="bi bi-box-arrow-right"></i></button
+      ></a>
+    </header>
+
+    <div class="container">
+      <aside class="sidebar">
+        <div class="profile">
+          <a href="#">
+            <div class="avatar"><i class="bi bi-person"></i></div>
+            <div class="name">Ibnu Ahmadallatif W</div>
+          </a>
+        </div>
+        <nav class="menu">
+          <a href="dashboard.html" class="menu-item active"
+            ><i class="bi bi-house-door"></i>Dashboard</a
+          >
+          <a href="laporan.html" class="menu-item"
+            ><i class="bi bi-journal-text"></i>Laporan Magang</a
+          >
+          <a href="nilai.html" class="menu-item"
+            ><i class="bi bi-award"></i>Penilaian & Sertifikat</a
+          >
+          <a href="notifikasi.html" class="menu-item"
+            ><i class="bi bi-bell"></i>Notifikasi</a
+          >
+          <a href="#" class="menu-item"><i class="bi bi-gear"></i>Setting</a>
+        </nav>
+      </aside>
+
+      <main class="content">
+        <div class="job-list-container">
+          <h1>📢 Lowongan Programmer</h1>
+          <div class="search-row">
+            <input
+              type="text"
+              placeholder="Cari posisi atau perusahaan..."
+              class="search-box"
+              onkeyup="filterJobs()"
+            />
+          </div>
+
+          <div class="job-list">
+            <div class="job-card">
+              <img src="foto/ruangguru.png" alt="Logo" class="job-logo" />
+              <h3>Frontend Developer</h3>
+              <p><strong>Ruangguru</strong></p>
+              <p>📍 Remote | ⏳ Full-time</p>
+              <p>📅 Dikirim: 28 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/gojek.png" alt="Logo" class="job-logo" />
+              <h3>Backend Engineer</h3>
+              <p><strong>GoJek</strong></p>
+              <p>📍 Jakarta | ⏳ Internship</p>
+              <p>📅 Dikirim: 27 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/bpjs.png" alt="Logo" class="job-logo" />
+              <h3>Mobile App Developer</h3>
+              <p><strong>BPJS Kesehatan</strong></p>
+              <p>📍 Bandung | ⏳ Part-time</p>
+              <p>📅 Dikirim: 25 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/tokped.jpg" alt="Logo" class="job-logo" />
+              <h3>UI/UX Designer</h3>
+              <p><strong>Tokopedia</strong></p>
+              <p>📍 Yogyakarta | ⏳ Freelance</p>
+              <p>📅 Dikirim: 22 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/traveloka.png" alt="Logo" class="job-logo" />
+              <h3>Fullstack Web Developer</h3>
+              <p><strong>Traveloka</strong></p>
+              <p>📍 Jakarta | ⏳ Full-time</p>
+              <p>📅 Dikirim: 20 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/xendit.jpg" alt="Logo" class="job-logo" />
+              <h3>DevOps Engineer</h3>
+              <p><strong>Xendit</strong></p>
+              <p>📍 Remote | ⏳ Contract</p>
+              <p>📅 Dikirim: 18 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/smart.jpg" alt="Logo" class="job-logo" />
+              <h3>Data Analyst</h3>
+              <p><strong>PT Smart Multi Finance</strong></p>
+              <p>📍 Jakarta | ⏳ Full-time</p>
+              <p>📅 Dikirim: 26 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/otsuka.jpg" alt="Logo" class="job-logo" />
+              <h3>Cybersecurity Engineer</h3>
+              <p><strong>PT Amerta Indah Otsuka</strong></p>
+              <p>📍 Remote | ⏳ Full-time</p>
+              <p>📅 Dikirim: 23 Juni 2025</p>
+            </div>
+
+            <div class="job-card">
+              <img src="foto/mba.png" alt="Logo" class="job-logo" />
+              <h3>QA Automation Tester</h3>
+              <p><strong>PT Mutiara Bintang Abadi</strong></p>
+              <p>📍 Bandung | ⏳ Contract</p>
+              <p>📅 Dikirim: 21 Juni 2025</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
